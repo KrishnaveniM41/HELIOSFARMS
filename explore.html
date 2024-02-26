@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="explore.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar h2 {
+            color: #fff;
+            margin: 0;
+            font-size: 1.5rem; /* Adjust font size as needed */
+        }
+
+        .navbar i {
+            margin-right: 5px; /* Adjust the margin as needed */
+        }
+
+        .gallery {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+            padding: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-container.tall {
+            grid-row: span 2;
+        }
+
+        .back-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Responsive styling */
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar h2 {
+                margin-top: 10px;
+            }
+            .navbar i {
+                font-size: 24px; /* Adjust the icon size as needed */
+                margin-right: 0; /* Remove right margin */
+                margin-bottom: 10px; /* Add bottom margin */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <i class="fa fa-home"> </i> 
+        </a>
+        <h2 class="section__header1">HELIOS PHOTO GALLERY</h2>
+    </nav>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="assets/image1.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image2.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image3.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image4.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image5.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image6.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image7.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image8.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image9.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image10.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image11.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image12.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image13.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image14.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image15.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image16.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image17.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="assets/image18.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image19.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image20.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image21.JPG">
+        </div>
+        <div class="image-container">
+            <img src="assets/image22.jpg">
+        </div>
+        <div class="image-container tall">
+            <img src="assets/image23.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image24.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image25.jpg">
+        </div>
+        <div class="image-container">
+            <img src="assets/image26.jpg">
+        </div>
+    </div>
+    
+</body>
+</html>
